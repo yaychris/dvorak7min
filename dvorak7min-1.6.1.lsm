@@ -1,0 +1,12 @@
+Begin3
+Title:           Dvorak 7min Tutor 
+Version:         1.7
+Entered-date:    06MAR03
+Description:     A ncurses based dvorak typing tutor
+Keywords:        dvorak typing tutor ncurses
+Author:          Ragnar Hojland Espinosa (ragnar@ragnar-hojland.com)
+Primary-site:    http://www.ragnar-hojland.com/dvorak7min-1.6.1.tar.gz
+Alternate-site:  metalab.unc.edu
+                 60kB dvorak7min-1.6.1.tar.gz
+Copying-policy:  GPL
+End

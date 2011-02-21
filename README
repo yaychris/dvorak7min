@@ -1,0 +1,37 @@
+First of all, please read COPYING.  Note that the text of the lessons is
+courtesy of Dan Wood <danwood@karelia.com>, and that they are available in
+the original html format at http://www.karelia.com/abcd/
+
+After that, just type
+
+        make
+	
+and when it's done, try running ``./dvorak7min''.
+
+If you get screwed up chars on the keyboard layout, you might want to try:
+
+  rm ~/.terminfo -R
+  
+and, if that doesn't work, try uncommenting the COLORS and/or the
+NOT_SO_PRETTY lines in the Makefile, and doing a ``make clean all''.  You
+have a few other options in the Makefile, have a look to them.
+
+In addition of the built-in lessons, you can use any ascii file (as Smoke
+suggests, Gutenberg books are good idea).  Just specify the filename as an
+argument to the program, and you are done. 
+
+If you are satisfied with the program, simply
+
+        make install
+	
+Remember that you can set your keyboard map with
+
+        loadkeys dvorak.map
+	
+Btw, the backspace key should work anywhere ;)
+
+-- 
+____/|  Ragnar Hojland  (ragnar@ragnar-hojland.com)      Fingerprint  94C4B
+\ o.O|                                                   2F0D27DE025BE2302C
+ =(_)=  "Thou shalt not follow the NULL pointer for      104B78C56 B72F0822
+   U     chaos and madness await thee at its end."       hkp://keys.pgp.com
