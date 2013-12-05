@@ -7,6 +7,7 @@ INSTALL = /usr/local/games/bin
 #BEEPS = -DBEEPS_ARENT_IRRITATING
 #FLASHES = -DFLASHES_ARENT_IRRITATING
 #COLORS = -DNO_COLORS_PLEASE
+#PROGRAMMER_DVORAK = -DPROGRAMMER_DVORAK
 
 # Max length of imported texts.  Set it to 0 or comment it if you don't want
 # a limit
@@ -18,14 +19,14 @@ LIMIT_LENGTH = -DLIMIT_LENGTH=1024
 PROF    = -g0 -O2
 CFLAGS  = $(PROF) -Wall \
 	$(PRETTINESS) $(NASTINESS) $(BEEPS) $(FLASHES) $(COLORS) \
-	$(LIMIT_LENGTH)
+	$(LIMIT_LENGTH) $(PROGRAMMER_DVORAK)
 LDFLAGS = $(PROF)
 LIBS    = -lncurses
 
 OBJECTS = dvorak7min.o lessons.o
 HEADERS = lessons.h
 TARGET  = dvorak7min
-		
+
 dvorak7min: $(OBJECTS)
 	$(CC) $(LDFLAGS) -o $(TARGET) $(OBJECTS) $(LIBS)
 
