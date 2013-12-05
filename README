@@ -5,6 +5,10 @@ the original html format at http://www.karelia.com/abcd/
 After that, just type
 
         make
+
+or type to use programmer Dvorak keyboard layout (http://www.kaufmann.no/roland/dvorak/)
+
+        make CPPFLAGS=-DPROGRAMMER_DVORAK
 	
 and when it's done, try running ``./dvorak7min''.
 
